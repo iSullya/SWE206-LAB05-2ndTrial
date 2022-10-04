@@ -51,5 +51,6 @@ public class Sorter {
         System.out.println("Sorted array");
         ob.printArray(array);
         ob.printArray(array2);
+
     }
 }

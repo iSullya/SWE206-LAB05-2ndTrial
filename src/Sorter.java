@@ -13,7 +13,7 @@ public class Sorter {
         }
     }
 
-    void insertionSort(int array[]) {
+    static void insertionSort(int array[]) {
         int size = array.length;
 
         for (int step = 1; step < size; step++) {
@@ -32,6 +32,10 @@ public class Sorter {
             array[j + 1] = key;
         }
     }
+
+    static void sort(int arr[]){
+        insertionSort(arr);
+    }
     // Method to print the elements of an array
     void printArray(int[] array)
     {
@@ -45,12 +49,13 @@ public class Sorter {
         Sorter ob = new Sorter();
         int[] array = {15, 10, 99, 53, 36};
         int[] array2 = {2,1,4,3};
+        sort(array2);
 
-        ob.insertionSort(array2);
         ob.selectionSort(array);
         System.out.println("Sorted array");
         ob.printArray(array);
         ob.printArray(array2);
+
 
     }
 }
